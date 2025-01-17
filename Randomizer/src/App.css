@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #ece9e6, #ffffff);
+  }
+  
+  .app-container {
+    text-align: center;
+    padding: 2rem;
+    border: 2px solid #007acc;
+    border-radius: 10px;
+    background-color: #f4faff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .heading {
+    color: #007acc;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .result-container {
+    margin-bottom: 1.5rem;
+  }
+  
+  .result-task, .result-stack {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0.5rem 0;
+    color: #333333;
+  }
+  
+  .button-container {
+
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .randomize-button, .reset-button {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+
+  .randomize-button
+  {
+    background-color: #007acc;
+  }
+  
+  .randomize-button:hover {
+    background-color: #005f99;
+    transform: scale(1.05);
+  }
+  
+  .randomize-button:active {
+    background-color: #003f66;
+    transform: scale(1);
+  }
+  
+
+  .reset-button
+  {
+    background-color: #c70017;
+  }
+
+.reset-button:hover {
+    background-color: #a72c32;
+    transform: scale(1.05);
+  }
+  
+  .reset-button:active, .randomize-button:active {
+    transform: scale(1);
+  }
