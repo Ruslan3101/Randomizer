@@ -1,43 +1,51 @@
 import { useState } from 'react';
 import "./App.css"
+import { appList } from './components/Lists/AppLists';
 
-const taskList = [
-  'Counter',
-  'Router',
-  'Todo List',
-  'Accordion',
-  'Modal + 3 Buttons',
-  'Weather',
-  'Tic-Tac-Toe',
-  'Drag-and-Drop',
-  'Memory Game',
-  'Loader with %'
-];
+type TAppList = {
+  title: string;
+  linkJs: string;
+  linkReact: string
+}
 
-const stackList = ['React', 'JavaScript'];
+
+const stackList: ('React' | 'JavaScript')[] = ['React', 'JavaScript'];
 
 function App() {
-  const [randomTask, setRandomTask] = useState(""); 
-  const [randomStack, setRandomStack] = useState("");
+  const [randomTask, setRandomTask] = useState<TAppList | null>(null); 
+  const [randomStack, setRandomStack] = useState<string>("");
+  const [linkForTask, setLinkForTask] = useState<string>("");
 
- const randomize = () =>{
-  let newTask, newStack;
 
+ const randomize = ():void =>{
+  let newTask: TAppList;
+  let newStack: string;
+  let link: string = '';
+
+  
     do {
-      newTask = taskList[Math.floor(Math.random() * (taskList.length))];
+      newTask = appList[Math.floor(Math.random() * (appList.length))];
     }while (newTask === randomTask);
 
     do{
       newStack = stackList[Math.floor(Math.random() * (stackList.length ))];
+    }while (newStack == randomStack)
 
-    }while (newStack === randomStack)
+    
+      link = newStack === "JavaScript" ? newTask.linkJs: newTask.linkReact
     setRandomTask(newTask)
     setRandomStack(newStack)  
+    setLinkForTask(link)
  }
+
+
+  
 
  const resetButtonHandler = () => {
   setRandomStack('');
-  setRandomTask('');
+  setRandomTask(null);
+  setLinkForTask('')
+
  }
  
 
@@ -47,8 +55,9 @@ function App() {
       <h1 className="heading">Click the button to get a task</h1>
     ) : (
       <div className="result-container">
-        <span className="result-task">Task: {randomTask}</span>
+        <span className="result-task">Task: {randomTask?.title}</span>
         <span className="result-stack">Write On: {randomStack}</span>
+        <a className="result-link" href={linkForTask} target='_blank' rel="noopener noreferrer">Open Task</a>
       </div>
     )}
     <div className='button-container'>
