@@ -18,16 +18,10 @@ export const appList = [
       "https://stackblitz.com/edit/vitejs-vite-f8qqne8d?file=README.md",
   },
   {
-    title: "Fetch Books",
-    linkJs: "https://stackblitz.com/edit/vitejs-vite-idup9t5g?file=Readme.md",
-    linkReact:
-      "https://stackblitz.com/edit/vitejs-vite-5fsiudcv?file=README.md",
-  },
-  {
     title: "Book Store",
     linkJs: "https://stackblitz.com/edit/vitejs-vite-n4kmwaln?file=README.md",
     linkReact:
-      "https://stackblitz.com/edit/vitejs-vite-1pnnzdzk?file=README.md",
+      "https://stackblitz.com/edit/vitejs-vite-vkyfaxkw?file=README.md",
   },
   {
     title: "Carousel with Image",
@@ -48,14 +42,14 @@ export const appList = [
       "https://stackblitz.com/edit/vitejs-vite-anuirsz5?file=README.md",
   },
   {
-    title: "Popup and 3 Buttons",
-    linkJs: "https://stackblitz.com/edit/vitejs-vite-idup9t5g?file=Readme.md",
+    title: "Pop-up and 3 buttons",
+    linkJs: "https://stackblitz.com/edit/vitejs-vite-1pnnzdzk?file=README.md",
     linkReact:
       "https://stackblitz.com/edit/vitejs-vite-qnevdsun?file=README.md",
   },
   {
     title: "Accordion",
-    linkJs: "https://stackblitz.com/edit/vitejs-vite-1pnnzdzk?file=README.md",
+    linkJs: "https://stackblitz.com/edit/vitejs-vite-bzsnnydw?file=README.md",
     linkReact:
       "https://stackblitz.com/edit/vitejs-vite-ebabkxdz?file=README.md",
   },
@@ -66,7 +60,7 @@ export const appList = [
       "https://stackblitz.com/edit/vitejs-vite-yhbbt3te?file=README.md",
   },
   {
-    title: "Router",
+    title: "TODO",
     linkJs: "https://stackblitz.com/edit/vitejs-vite-8os23uxv?file=README.md",
     linkReact:
       "https://stackblitz.com/edit/vitejs-vite-zqg27c2w?file=README.md",
