@@ -2,6 +2,7 @@ import { useState } from 'react';
 import "./App.css"
 import { appList } from './components/Lists/AppLists';
 import Timer from './components/Timer/Timer';
+import Skeleton from './components/Skeleton/Skeleton';
 
 type TAppList = {
   title: string;
@@ -55,7 +56,11 @@ function App() {
   
   <div className="app-container">
     {!randomTask && !randomStack ? (
-      <h1 className="heading">Click the button to get a task</h1>
+      <div className="result-container">
+        <span className="heading" id="heading">Click the button to get a task</span>
+        <Skeleton width={150}/>
+        <Skeleton width={120} height={20}/>
+      </div>
     ) : (
       <div className="result-container">
         <span className="result-task">Task: {randomTask?.title}</span>

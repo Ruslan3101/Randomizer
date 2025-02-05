@@ -1,0 +1,25 @@
+.skeleton-container {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.skeleton-row{
+    display: block;
+    margin-bottom: 0.5rem;
+    background-color: grey;
+    border: none;
+    border-radius: 8px;
+    animation:  skeleton-row 1s linear infinite alternate;
+}
+
+@keyframes skeleton-row {
+    0% {
+        background-color: rgba(191, 141, 246, 0.764);
+    }
+    100%{
+        background-color: rgba(164, 81, 246, 0.764);
+    }
+}

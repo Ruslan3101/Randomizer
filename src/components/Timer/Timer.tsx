@@ -76,7 +76,7 @@ export default function Timer() {
                 <h2 style={{color: 'black'}}>
                 {remainingTime > 0 
                   ?`${formattedMinutes}:${formattedSeconds}` 
-                  : "Choose duration"}
+                  : "Choose a duration"}
                   </h2>
                 <div className="button-container">
                 <button className="reset-button" onClick={() => resetTimer()}>
