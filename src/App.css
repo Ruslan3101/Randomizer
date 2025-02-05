@@ -1,3 +1,4 @@
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -12,10 +13,13 @@ body {
   .app-container {
     text-align: center;
     padding: 2rem;
+    margin: 0 auto;
+    max-width: 600px;
     border-radius: 10px;
     background-color: #b9b9b9;
     box-shadow: 0 4px 10px rgba(251, 251, 251, 0.38);
-    width: 500px;
+    width: 100%;
+    box-sizing: border-box;
 
   }
   
@@ -23,7 +27,6 @@ body {
   
   .result-container {
     margin-bottom: 1.5rem;
-    /* border: 1px solid ; */
     padding: 20px;
     border-radius: 5px;
     background-color: rgb(204, 204, 204);
@@ -32,7 +35,7 @@ body {
   
   .result-task, .result-stack, .heading {
     display: block;
-    font-size: 1.2rem;
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
     font-weight: bold;
     margin: 0.5rem 0;
     color: #333333;
@@ -123,3 +126,23 @@ body {
   .result-container{
     height: 100px;
   }
+/* Mobile */
+@media screen and (min-width: 480px){
+  .app-container{
+    width: 300px;
+    padding: 1rem;
+  } 
+}
+
+/* Tablet */
+@media screen and (min-width: 768px){
+  .app-container{
+    width: 400px;
+  } 
+}
+/* Desktop */
+@media screen and (min-width: 1280px){
+  .app-container{
+    width: 600px;
+  } 
+}
