@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import "./App.css"
 import { appList } from './components/Lists/AppLists';
+import Timer from './components/Timer/Timer';
 
 type TAppList = {
   title: string;
@@ -15,6 +16,8 @@ function App() {
   const [randomTask, setRandomTask] = useState<TAppList | null>(null); 
   const [randomStack, setRandomStack] = useState<string>("");
   const [linkForTask, setLinkForTask] = useState<string>("");
+
+
 
 
  const randomize = ():void =>{
@@ -39,7 +42,6 @@ function App() {
  }
 
 
-  
 
  const resetButtonHandler = () => {
   setRandomStack('');
@@ -50,6 +52,7 @@ function App() {
  
 
  return (
+  
   <div className="app-container">
     {!randomTask && !randomStack ? (
       <h1 className="heading">Click the button to get a task</h1>
@@ -63,10 +66,13 @@ function App() {
     <div className='button-container'>
     <button className="randomize-button" onClick={randomize}>Get Task</button>
     {randomTask && randomStack && (
-          <button className="reset-button" onClick={resetButtonHandler}>Reset</button>
+          <button className="reset-button" onClick={resetButtonHandler}>Reset Task</button>
         )}
     </div>
+
+    <Timer/>
   </div>
+
   )
 }
 
