@@ -1,0 +1,24 @@
+.sorted-list-container{
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+}
+.sorted-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sorted-links-title{
+    justify-content: left;
+    font-weight: bold;
+    color: #333333;
+
+}
+.sorted-links{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+a{
+    font-weight: bold;
+}

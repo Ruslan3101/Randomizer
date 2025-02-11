@@ -1,4 +1,10 @@
-export const appList = [
+export interface AppList {
+  title: string;
+  linkJs: string;
+  linkReact: string;
+}
+
+export const appList: AppList[] = [
   {
     title: "Progress bar",
     linkJs: "https://stackblitz.com/edit/vitejs-vite-idup9t5g?file=Readme.md",
