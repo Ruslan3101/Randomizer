@@ -1,0 +1,24 @@
+.timer-container{
+    margin-top: 20px
+  }
+  .time-duration{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  
+  }
+  .time-duration-button{
+    background-color: #dfdfdf;
+    color: black;
+    cursor: pointer;
+    outline: #007acc;
+
+    &:hover{
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    &:focus{
+      border: 1px solid #007acc;
+    }
+  
+  }

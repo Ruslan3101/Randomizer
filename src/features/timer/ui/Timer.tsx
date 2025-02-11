@@ -1,6 +1,7 @@
 import { useRef, useState } from 'react';
+import "./Timer.css"
 
-export default function Timer() {
+export const  Timer = ()  =>{
       const [, setTimerEnded] = useState(false);
       const [times] = useState<number[]>([0.1, 1, 10, 20, 30, 40]);
       const [remainingTime, setRemainingTime] = useState(0);

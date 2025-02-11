@@ -17,9 +17,9 @@
 
 @keyframes skeleton-row {
     0% {
-        background-color: rgba(191, 141, 246, 0.764);
+        background-color: rgba(167, 161, 174, 0.764);
     }
     100%{
-        background-color: rgba(164, 81, 246, 0.764);
+        background-color: rgba(113, 110, 116, 0.764);
     }
 }
